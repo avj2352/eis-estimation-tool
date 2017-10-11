@@ -1,0 +1,77 @@
+$main-background-flatten-color: #03121F;
+$main-background-start-gradient-color: #0d3c54;
+$main-background-end-gradient-color: #02111d;
+
+.login-page {
+  // border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+
+  background-color: $main-background-flatten-color;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d3c54+0,02111d+100 */  
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, $main-background-start-gradient-color 0%, $main-background-end-gradient-color 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, $main-background-start-gradient-color 0%, $main-background-end-gradient-color 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, $main-background-start-gradient-color 0%, $main-background-end-gradient-color 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$main-background-start-gradient-color, endColorstr=$main-background-end-gradient-color, GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  color: white;  
+
+  img {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 30px;
+  }
+  form {
+    color: black;
+    font-size: 15px; // border: 1px solid red;
+    font-family: 'Centrale Sans';
+    margin: 0 auto;
+    width: 30%;
+    flex-direction: column;
+    input {
+      width: 95%;
+      min-width: 150px;
+      padding: 3px;
+      margin: 15px auto;
+      display: block;
+      &.btn {
+        padding: 5px;
+        margin: 5px auto;
+        border-radius: 0px;
+      }
+    }
+    a {
+      display: block;
+      margin: 35px auto 0px;
+      cursor: pointer;
+    }
+    .formErrors{
+      color: red;
+    }
+  } //end:form
+  footer {
+    // border: 1px solid orange;
+    align-self: flex-start;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    margin-top: 50px;
+  }
+}

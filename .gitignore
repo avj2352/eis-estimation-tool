@@ -1,0 +1,6 @@
+.vscode
+ng-eis-ngblur-stack/.vscode
+eis-back-end/.vscode
+node_modules/
+eis-back-end/node_modules/
+ng-eis-ngblur-stack/node_modules/

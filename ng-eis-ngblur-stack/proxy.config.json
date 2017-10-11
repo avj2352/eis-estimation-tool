@@ -1,0 +1,12 @@
+{   
+    "/api/test/authorization/authenticate":{
+        "target":"http://INGBTCPIC5DTR98:8080/EISPortalTest/api/authorization/authenticate",
+        "secure":false,
+        "logLevel":"debug"
+    },
+    "/api/prod/*":{
+        "target":"http://INGBTCPIC5DTR98:8080/EISPortal/api/",
+        "secure":false,
+        "logLevel":"debug"
+    }
+}

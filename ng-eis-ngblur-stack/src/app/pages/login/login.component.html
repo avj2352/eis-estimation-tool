@@ -1,0 +1,16 @@
+<div class="login-page">
+    <img src="./assets/img/philips-shield-logo.png" width="100px" height="auto"/>
+    <h1><strong>Philips</strong> EIS Estimation Tool</h1>
+    <form [formGroup] ="loginForm" class="login-form" (ngSubmit)="onSubmit(loginForm.value)">
+      <p class="formErrors">{{ loginResponseErrorMsg }}</p>
+      <input name="username" type="text" placeholder="username@philips.com" formControlName="username"/>
+      <p *ngIf="loginForm.controls.username.errors" class="formErrors">Username is required/invalid</p>
+      <input name="password" type="password" formControlName="password"/>
+      <p *ngIf="loginForm.controls.password.errors" class="formErrors">Password is required</p>
+      <input class="btn btn-primary" type="submit" [disabled]="!loginForm.valid"/>
+      <!-- <p><a>Forgot Password ?</a></p> -->
+    </form>
+    <footer>
+        Copyrights and other proprietary rights in any software and related documentation (”Software”) made available to you rest exclusively with Philips and its licensors. No title or ownership in the software is conferred to you. Use of the Software is subject to the end user license conditions as are available on request.
+    </footer>
+  </div>  
