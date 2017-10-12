@@ -5,6 +5,7 @@ $main-background-end-gradient-color: #02111d;
 .login-page {
   // border: 1px solid red;
   display: flex;
+  font-family: 'Centrale Sans';
   flex-direction: column;
   position: absolute;
   justify-content: center;
@@ -30,7 +31,7 @@ $main-background-end-gradient-color: #02111d;
 
   img {
     display: block;
-    margin: 0 auto;
+    margin: 10px auto 50px;
     text-align: center;
   }
   h1 {
@@ -46,6 +47,7 @@ $main-background-end-gradient-color: #02111d;
     width: 30%;
     flex-direction: column;
     input {
+      font-family: 'Centrale Sans';
       width: 95%;
       min-width: 150px;
       padding: 3px;
@@ -69,6 +71,7 @@ $main-background-end-gradient-color: #02111d;
   footer {
     // border: 1px solid orange;
     align-self: flex-start;
+    font-size: 15px;
     margin: 0 auto;
     text-align: center;
     width: 60%;

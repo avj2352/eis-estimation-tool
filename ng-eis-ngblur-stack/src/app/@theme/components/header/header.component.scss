@@ -2,10 +2,15 @@
 @import '~bootstrap/scss/mixins/breakpoints';
 @import '~@nebular/theme/styles/global/bootstrap/breakpoints';
 
+
+
 @include nb-install-component() {
+  font-family: 'Centrale Sans';
   display: flex;
   justify-content: space-around;
   width: 100%;
+  
+  
 
   .left {
     display: flex;
@@ -111,5 +116,14 @@
       display: none;
     }
   }
-}
+}//end:nb-install-component()
 
+.nb-theme-default nb-user{
+  .user-container-with-menu{
+    .info-container{
+      .user-name{
+        font-family: 'Centrale Sans';
+      }
+    }
+  }
+}

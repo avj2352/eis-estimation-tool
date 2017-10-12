@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
   user: any;
 
   // userMenu = [{ title: 'Profile' }, { title: 'Log out' }];
-  userMenu = [{ title: 'Log out' }];
+  userMenu = [{ title: 'Log out', menuClick: 'logoutMenu()' }];
 
   constructor(
     private sidebarService: NbSidebarService,
@@ -57,8 +57,8 @@ export class HeaderComponent implements OnInit {
     this.analyticsService.trackEvent('startSearch');
   }
 
-  logoutMenu(){
-    console.log('Logging out');
+  logoutMenu(event){
+    console.log('Logging out',event);
     this.store.dispatch({type:LOGOUT_REQUEST_ACTION});
     this.router.navigateByUrl('/auth');
   }//end:logoutMenu
